@@ -1,9 +1,9 @@
 # GoSummary
 Summarize the articles about keyword using various graphs
 
-2018.01.16 프로젝트 모임
+### 2018.01.16 프로젝트 모임
 
-<기술 스택>
+### 기술 스택
 
 1. 스파크
 
@@ -17,7 +17,7 @@ Summarize the articles about keyword using various graphs
 
 6. zeppelin
 
-<아이디어>
+### 아이디어
 
 어떤 키워드 검색 시에, 전체 언론사 데이터를 기반으로 특정 년월일에 급증하는 단어, 비중 각 언론사별로 그래프 표시. 단어 선택시 링크 제공
 
@@ -35,11 +35,11 @@ Summarize the articles about keyword using various graphs
 
 - 개발 목표 : 어떤 키워드에 대해서 먼저 한 눈에 볼 수 있는 요약 정보 페이지를 목표로 한다.
 
-<프로젝트 제목>
+### 프로젝트 제목
 
 미정
 
-<기술 적용>
+### 기술 적용
 
 - 개발환경 구축 : Docker를 활용하여 Spark, Elastic Search, MariaDB, Zeppelin 환경구축
 
@@ -55,6 +55,6 @@ Summarize the articles about keyword using various graphs
 
 - 서비스 : 카카오톡API or Application
 
-<추가 논의>
+### 추가논의
 1. 블록체인의 추가 적용은 추후 논의
 
