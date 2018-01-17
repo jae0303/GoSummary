@@ -58,3 +58,50 @@ Summarize the articles about keyword using various graphs
 ### 추가논의
 1. 블록체인의 추가 적용은 추후 논의
 
+### 2018.01.17
+### 진행상황 - 개발환경구축
+1. Docker image 생성 및 배포
+ - ubuntu:16.04 version을 기반으로 Spark v2.2.0 설치완료.
+ 
+ “`
+  docker pull ubuntu:16.04
+  “`
+  
+  “`
+  root@8bb26156f9cd:/#apt-get update
+  “`
+  
+  “`
+  root@8bb26156f9cd:/#apt-get install -y wget
+  “`
+  
+  “`
+  root@8bb26156f9cd:/#wget http://apache.mirror.cdnetworks.com/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.7.tgz 
+  “`
+  “`
+  root@8bb26156f9cd:/#tar xvzf spark-2.2.0-bin-hadoop2.7.tgz
+  “`
+
+  “`
+  docker commit 00dfba2b0327 goSummary
+   “`
+
+   “`
+   docker tag gosummary ssyth19/gosummary:01
+  “`
+ 
+   “`
+   docker push ssyth19/gosummary:01
+   “`
+ - 위와같은 과정을 통해 이미지 업로드 완료
+2. Docker image를 다운받기 위해선 다음과 같은 명령어를 사용
+ 
+  “`
+   docker pull ssyth19/gosummary:01
+   “`
+ - 다운받은 이미지를 실행한다.
+
+  “`
+   docker run -i -t ssyth19/gosummary:01 /bin/bash
+   “`
+ - 추후 나머지 환경들도 구축완료할 예정
