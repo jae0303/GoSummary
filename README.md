@@ -104,4 +104,7 @@ Summarize the articles about keyword using various graphs
   “`
    docker run -i -t ssyth19/gosummary:01 /bin/bash
    “`
+   
+3. Docker내에 엘라스틱서치 설치완료
+
  - 추후 나머지 환경들도 구축완료할 예정
